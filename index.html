@@ -73,15 +73,16 @@
         <section class="hero-section d-none flex-column align-center justify-center p-3">
             <h2 class="hero-title font-style-2 color-white p-1">BOOKSHOP</h2>
             <h4 class="font-style-1 color-white font-size-md">An online market place for all kinds of books</h4>
-            <form action="#" class="p-3 d-flex align-center">
-                <select name="genre" class="genre-selector border-0 bg-white border-right">
+            <form action="#" class="hero-form p-1 d-flex align-center">
+                <select name="genre" class="genre-selector border-0 bg-white border-right flex-grow-1">
                     <option value="all">All genre</option>
                     <option value="non-fiction">Non Fiction</option>
                     <option value="fiction">Fiction</option>
                     <option value="academic">Academic</option>
                 </select>
-                <input type="text" placeholder="What do you search for ?" class="p-1 border-0 font-style-1 border-right">
-                <input type="text" placeholder="Search..." class="p-1 border-0 font-style-1">
+                <input type="text" placeholder="What do you search for ?"
+                    class="p-1 border-0 font-style-1 border-right flex-grow-1">
+                <input type="text" placeholder="Search..." class="p-1 border-0 font-style-1 flex-grow-1">
                 <button href="search.html" type="button"
                     class="default-btn font-size-sm font-style-2 bg-color-3 ml-1">Search</button>
             </form>
@@ -89,7 +90,25 @@
     </header>
 
     <main>
-
+        <section class="featured-book mx-auto p-1">
+            <h4 class="font-style-2 font-size-md color-2">FEATURED BOOK</h4>
+            <div class="d-flex justify-between py-1">
+                <img src="assets/images/siddhartha.jpg" alt="siddhartha" class="d-block h-200">
+                <div class="ml-1">
+                    <h4 class="font-style-2 font-size-md color-1">Siddhartha: A Novel <span
+                            class="font-style-1 font-size-md color-2">by Hermann Hesse, Hilda Rosner (Translator)</span>
+                    </h4>
+                    <p class="font-style-1 font-size-s color-3 py-1 d-none visible-in-md">Herman Hesse's classic novel has delighted, inspired, and influenced generations of readers,
+                        writers, and thinkers. In this story of a wealthy Indian Brahmin who casts off a life of
+                        privilege to seek spiritual fulfillment.</p>
+                    <p class="font-size-md font-style-2 color-3 py-1">Rating: 4/5</p>
+                    <div class="d-flex flex-column purchase-details-container">
+                        <a href="#" class="default-btn font-size-md font-style-2 bg-color-1 mr-half my-1">$5.49</a>
+                        <a href="#" class="default-btn font-size-sm font-style-2 bg-color-1 mr-half my-1"><img src="/assets/images/supermarket-white.svg" alt="cart-logo-2"><span class="pl-1">Purchase Details</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
