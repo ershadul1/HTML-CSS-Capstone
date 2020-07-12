@@ -109,6 +109,10 @@ a {
   padding: 1rem;
 }
 
+.p-2 {
+  padding: 2rem;
+}
+
 .pl-1 {
   padding-left: 1rem;
 }
@@ -126,7 +130,7 @@ a {
 }
 
 .font-size-md {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .font-size-sm {
@@ -193,7 +197,7 @@ img[alt="user-img"] {
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .stock-btn {
