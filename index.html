@@ -11,47 +11,49 @@
 
 <body>
     <header>
-        <nav class="bg-color-3 d-flex justify-around py-2">
-            <ul class="navbar-links d-flex align-center justify-around">
+        <nav class="bg-color-3 d-flex justify-around p-1">
+            <ul class="navbar-links d-flex align-center justify-center">
                 <li>
                     <a href="/index.html" class="image-highlight">
                         <img src="/assets/images/book.svg" alt="bookshop-logo">
-                        <span class="color-white font-style-3 font-size-lg pl-1 gray-highlight">BOOKSHOP</span>
+                        <span class="color-white font-style-3 font-size-md pl-1 gray-highlight">BOOKSHOP</span>
                     </a>
                 </li>
-                <li  class="pl-2">
+                <li class="pl-2 d-none visible-in-md">
                     <a href="index.html">
                         <img src="/assets/images/home-run.svg" alt="home-logo" class="navbar-icon">
-                        <span class="color-1 font-style-1 font-size-md pl-1 white-highlight">HOME</span>
+                        <span class="color-1 font-style-1 font-size-sm pl-1 white-highlight">HOME</span>
                     </a>
                 </li>
-                <li  class="pl-2">
+                <li class="pl-2 d-none visible-in-md">
                     <a href="#">
                         <img src="/assets/images/bookshelf.svg" alt="collection-logo" class="navbar-icon">
-                        <span class="color-2 font-style-1 font-size-md pl-1 white-highlight">COLLECTIONS</span>
-                    </a>
-                </li>
-                <li  class="pl-2">
-                    <a href="#">
-                        <img src="/assets/images/supermarket.svg" alt="cart-logo" class="navbar-icon">
-                        <span class="color-2 font-style-1 font-size-md pl-1 white-highlight">PURCHASE LIST</span>
+                        <span class="color-2 font-style-1 font-size-sm pl-1 white-highlight">COLLECTIONS</span>
                     </a>
                 </li>
                 <li class="pl-2">
-                    <button type="button" class="d-none stock-btn default-btn font-size-md font-style-2">REQUEST
+                    <a href="#">
+                        <img src="/assets/images/supermarket.svg" alt="cart-logo" class="navbar-icon">
+                        <span
+                            class="color-2 font-style-1 font-size-sm pl-1 white-highlight d-none visible-in-md">PURCHASE
+                            LIST</span>
+                    </a>
+                </li>
+                <li class="pl-2">
+                    <button type="button" class="d-none stock-btn default-btn font-size-sm font-style-2">REQUEST
                         FOR STOCK</button>
                 </li>
             </ul>
 
-            <ul class="navbar-links d-none align-center user-info">
-                <li>
+            <ul class="navbar-links d-flex justify-around align-center user-info">
+                <li class="d-none visible-in-lg">
                     <a href="#" class="image-highlight">
                         <img src="/assets/images/mail.svg" alt="mail-icon" class="navbar-icon">
                         <span
                             class="d-inline-block bg-color-1 mail-notification font-size-sm font-style-2 color-white">12</span>
                     </a>
                 </li>
-                <li>
+                <li class="d-none visible-in-lg">
                     <a href="#">
                         <span class="color-white font-style-3 font-size-md pl-1 gray-highlight">User Name</span>
                     </a>
@@ -60,6 +62,9 @@
                     <a href="#">
                         <img src="/assets/images/person.svg" alt="user-img" class="image-highlight pl-1">
                     </a>
+                </li>
+                <li class="pl-2">
+                    <a href="search.html" class="search-btn default-btn font-size-sm font-style-2">Search</a>
                 </li>
             </ul>
         </nav>

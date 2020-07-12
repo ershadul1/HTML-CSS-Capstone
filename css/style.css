@@ -109,6 +109,10 @@ a {
   align-items: center;
 }
 
+.p-1 {
+  padding: 1rem;
+}
+
 .py-1 {
   padding: 1rem 0;
 }
@@ -134,7 +138,7 @@ a {
 }
 
 .font-size-md {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .font-size-sm {
@@ -170,7 +174,7 @@ a {
 }
 
 html {
-  font-size: 6px;
+  font-size: 10px;
 }
 
 /* navbar styles */
@@ -200,17 +204,25 @@ img[alt="user-img"] {
 /* Media queries */
 
 @media screen and (min-width: 768px) {
-  html {
-    font-size: 10px;
+  .visible-in-md {
+    display: block;
   }
 
   .stock-btn {
     display: block;
+  }
+
+  .search-btn {
+    display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .user-info {
     display: flex;
+  }
+
+  .visible-in-lg {
+    display: block;
   }
 }
