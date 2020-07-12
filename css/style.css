@@ -90,6 +90,10 @@
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -106,8 +110,16 @@
   justify-content: space-between;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .align-center {
   align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
 }
 
 .flex-grow-1 {
@@ -122,6 +134,10 @@ a {
   align-items: center;
 }
 
+.p-half {
+  padding: 0.5rem;
+}
+
 .p-1 {
   padding: 1rem;
 }
@@ -132,6 +148,10 @@ a {
 
 .p-3 {
   padding: 3rem;
+}
+
+.px-half {
+  padding: 0 0.5rem;
 }
 
 .py-1 {
@@ -174,12 +194,20 @@ a {
   margin: 0 auto;
 }
 
+.mx-half {
+  margin: 0 0.5rem;
+}
+
 .border-0 {
   border: none;
 }
 
 .border-right {
   border-right: 1px solid var(--color-1);
+}
+
+.border-bottom {
+  border-bottom: 2px solid #ccc;
 }
 
 .font-size-lg {
@@ -206,6 +234,10 @@ a {
   height: 200px;
 }
 
+.h-100 {
+  height: 100%;
+}
+
 .default-btn {
   color: #fff;
   padding: 1rem 2rem;
@@ -215,6 +247,7 @@ a {
 
 .default-btn:hover {
   background-color: var(--color-2);
+  cursor: pointer;
 }
 
 .white-highlight:hover {
@@ -223,6 +256,10 @@ a {
 
 .gray-highlight:hover {
   color: var(--color-2);
+}
+
+.black-highlight:hover {
+  color: var(--color-3);
 }
 
 .image-highlight:hover {
@@ -235,6 +272,16 @@ a {
 
 html {
   font-size: 10px;
+  background-color: #f5f5f5;
+}
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }
 
 /* navbar styles */
@@ -268,7 +315,7 @@ img[alt="user-img"] {
 }
 
 .hero-form {
-  width: 600px;
+  width: 700px;
 }
 
 .genre-selector {
@@ -278,12 +325,37 @@ img[alt="user-img"] {
 /* Featured book */
 
 .featured-book {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 img[alt="cart-logo-2"] {
   width: 2rem;
   height: 2rem;
+}
+
+/* Book genre container */
+
+.book-genre-container {
+  max-width: 768px;
+}
+
+.category-heading-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.book-card {
+  width: 48%;
+  border: 1px solid #ddd;
+}
+
+.book-card-img {
+  width: 100%;
+}
+
+.add-to-cart {
+  border: 1px solid #ccc;
+
 }
 
 /* Media queries */
@@ -307,6 +379,10 @@ img[alt="cart-logo-2"] {
 
   .purchase-details-container {
     flex-direction: row;
+  }
+
+  .book-card {
+    width: 24%;
   }
 }
 

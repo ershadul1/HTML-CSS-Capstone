@@ -74,15 +74,15 @@
             <h2 class="hero-title font-style-2 color-white p-1">BOOKSHOP</h2>
             <h4 class="font-style-1 color-white font-size-md">An online market place for all kinds of books</h4>
             <form action="#" class="hero-form p-1 d-flex align-center">
-                <select name="genre" class="genre-selector border-0 bg-white border-right flex-grow-1">
+                <select name="genre" class="genre-selector border-0 bg-white border-right flex-grow-1 pointer">
                     <option value="all">All genre</option>
                     <option value="non-fiction">Non Fiction</option>
                     <option value="fiction">Fiction</option>
                     <option value="academic">Academic</option>
                 </select>
                 <input type="text" placeholder="What do you search for ?"
-                    class="p-1 border-0 font-style-1 border-right flex-grow-1">
-                <input type="text" placeholder="Search..." class="p-1 border-0 font-style-1 flex-grow-1">
+                    class="p-1 border-0 font-style-1 border-right flex-grow-1 pointer">
+                <input type="text" placeholder="Search..." class="p-1 border-0 font-style-1 flex-grow-1 pointer">
                 <button href="search.html" type="button"
                     class="default-btn font-size-sm font-style-2 bg-color-3 ml-1">Search</button>
             </form>
@@ -90,25 +90,106 @@
     </header>
 
     <main>
-        <section class="featured-book mx-auto p-1">
-            <h4 class="font-style-2 font-size-md color-2">FEATURED BOOK</h4>
-            <div class="d-flex justify-between py-1">
-                <img src="assets/images/siddhartha.jpg" alt="siddhartha" class="d-block h-200">
-                <div class="ml-1">
-                    <h4 class="font-style-2 font-size-md color-1">Siddhartha: A Novel <span
-                            class="font-style-1 font-size-md color-2">by Hermann Hesse, Hilda Rosner (Translator)</span>
-                    </h4>
-                    <p class="font-style-1 font-size-s color-3 py-1 d-none visible-in-md">Herman Hesse's classic novel has delighted, inspired, and influenced generations of readers,
-                        writers, and thinkers. In this story of a wealthy Indian Brahmin who casts off a life of
-                        privilege to seek spiritual fulfillment.</p>
-                    <p class="font-size-md font-style-2 color-3 py-1">Rating: 4/5</p>
-                    <div class="d-flex flex-column purchase-details-container">
-                        <a href="#" class="default-btn font-size-md font-style-2 bg-color-1 mr-half my-1">$5.49</a>
-                        <a href="#" class="default-btn font-size-sm font-style-2 bg-color-1 mr-half my-1"><img src="/assets/images/supermarket-white.svg" alt="cart-logo-2"><span class="pl-1">Purchase Details</span></a>
+        <!-- Featured Book -->
+        <div class="bg-white">
+            <section class="featured-book mx-auto p-1">
+                <h4 class="font-style-2 font-size-md color-2 black-highlight pointer">FEATURED BOOK</h4>
+                <div class="d-flex justify-between py-1">
+                    <img src="assets/images/siddhartha.jpg" alt="siddhartha" class="d-block h-200">
+                    <div class="ml-1">
+                        <h4 class="font-style-2 font-size-md color-1 pointer black-highlight">Siddhartha: A Novel <span
+                                class="font-style-1 font-size-md color-2 black-highlight">by Hermann Hesse, Hilda Rosner
+                                (Translator)</span>
+                        </h4>
+                        <p class="font-style-1 font-size-s color-3 py-1 d-none visible-in-md gray-highlight pointer">
+                            Herman Hesse's classic novel
+                            has delighted, inspired, and influenced generations of readers,
+                            writers, and thinkers. In this story of a wealthy Indian Brahmin who casts off a life of
+                            privilege to seek spiritual fulfillment.</p>
+                        <p class="font-size-md font-style-2 color-3 py-1 gray-highlight pointer">Rating: 4/5</p>
+                        <div class="d-flex flex-column purchase-details-container">
+                            <a href="#" class="default-btn font-size-md font-style-2 bg-color-1 mr-half my-1">$5.49</a>
+                            <a href="#" class="default-btn font-size-sm font-style-2 bg-color-1 mr-half my-1"><img
+                                    src="/assets/images/supermarket-white.svg" alt="cart-logo-2"><span
+                                    class="pl-1">Purchase
+                                    Details</span></a>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </div>
+
+        <!-- Non Fiction  -->
+        <section class="book-genre-container mx-auto p-1">
+            <h4 class="font-style-2 font-size-md color-2  border-bottom my-1 py-1 black-highlight pointer"><img
+                    src="assets/images/ai.svg" alt="non-fiction" class="category-heading-icons mr-half">Non Fiction
+                Books</h4>
+            <div class="book-cards-container d-flex flex-wrap justify-between">
+                <div class="book-card bg-white my-1">
+                    <img src="/assets/images/non-fiction-img-1.jpg" alt="non-fiction-img-1"
+                        class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">"Surely You're Joking, Mr.
+                            Feynman!": Adventures of a Curious Character</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Richard P. Feynman</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.6/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$10.89</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="/assets/images/non-fiction-img-2.jpg" alt="non-fiction-img-1"
+                        class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">Educated</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Tara Westover</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.47/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$19.60</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="/assets/images/non-fiction-img-3.jpg" alt="non-fiction-img-1"
+                        class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">Thinking, Fast and Slow</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Daniel Kahneman</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.5/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$8.99</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="/assets/images/non-fiction-img-4.jpg" alt="non-fiction-img-1"
+                        class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">Bad Blood: Secrets and Lies in a Silicon Valley Startup</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by John Carreyrou</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.44/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$15.33</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
+
     </main>
 
     <footer>
