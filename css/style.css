@@ -1,0 +1,208 @@
+/* Variables */
+:root {
+  --color-1: #d35266;
+  --color-2: #888;
+  --color-3: #383838;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'light';
+  src: url("../assets/fonts/HelveticaNeue\ Light.ttf");
+}
+
+@font-face {
+  font-family: 'medium';
+  src: url("../assets/fonts/HelveticaNeue\ Medium.ttf");
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url("../assets/fonts/Helvetica\ Neu\ Bold.ttf");
+}
+
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color-1 {
+  color: var(--color-1);
+}
+
+.color-2 {
+  color: var(--color-2);
+}
+
+.color-3 {
+  color: var(--color-3);
+}
+
+.color-white {
+  color: #fff;
+}
+
+.bg-color-1 {
+  background-color: var(--color-1);
+}
+
+.bg-color-2 {
+  background-color: var(--color-2);
+}
+
+.bg-color-3 {
+  background-color: var(--color-3);
+}
+
+.font-style-1 {
+  font-family: 'light', sans-serif;
+}
+
+.font-style-2 {
+  font-family: 'medium', sans-serif;
+}
+
+.font-style-3 {
+  font-family: 'bold', sans-serif;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.font-size-lg {
+  font-size: 2rem;
+}
+
+.font-size-md {
+  font-size: 1.3rem;
+}
+
+.font-size-sm {
+  font-size: 1rem;
+}
+
+.font-size-xs {
+  font-size: 0.5rem;
+}
+
+.default-btn {
+  background-color: var(--color-1);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.default-btn:hover {
+  background-color: var(--color-2);
+}
+
+.white-highlight:hover {
+  color: #fff;
+}
+
+.gray-highlight:hover {
+  color: var(--color-2);
+}
+
+.image-highlight:hover {
+  opacity: 0.7;
+}
+
+html {
+  font-size: 5.6px;
+}
+
+/* navbar styles */
+
+.navbar-links {
+  list-style-type: none;
+}
+
+img[alt="bookshop-logo"],
+img[alt="user-img"] {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.navbar-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.mail-notification {
+  position: relative;
+  left: 0;
+  top: -0.8rem;
+  padding: 0.2rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .stock-btn {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .user-info {
+    display: flex;
+  }
+}
