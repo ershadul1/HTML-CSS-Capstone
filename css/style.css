@@ -8,17 +8,17 @@
 /* Fonts */
 @font-face {
   font-family: 'light';
-  src: url("../assets/fonts/HelveticaNeue\ Light.ttf");
+  src: url("../assets/fonts/HelveticaNeue-Light.ttf");
 }
 
 @font-face {
   font-family: 'medium';
-  src: url("../assets/fonts/HelveticaNeue\ Medium.ttf");
+  src: url("../assets/fonts/HelveticaNeue-Medium.ttf");
 }
 
 @font-face {
   font-family: 'bold';
-  src: url("../assets/fonts/Helvetica\ Neu\ Bold.ttf");
+  src: url("../assets/fonts/HelveticaNeu-Bold.ttf");
 }
 
 /* General styles */

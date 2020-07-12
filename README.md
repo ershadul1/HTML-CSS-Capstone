@@ -1,4 +1,4 @@
-# Project Name 🚧
+# HTML-CSS CAPSTONE 'BOOKSHOP' 🚧
 
 > One paragraph statement about the project.
 
@@ -8,13 +8,13 @@ Additional description about the project and its features.
 
 ## Built With 🧰
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML
+- CSS
+
 
 ## Live Demo 🔴
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://gracious-goldberg-aefc53.netlify.app/)
 
 
 ## Getting Started 🏁
