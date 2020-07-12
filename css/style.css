@@ -3,6 +3,7 @@
   --color-1: #d35266;
   --color-2: #888;
   --color-3: #383838;
+  --color-4: #d67e89;
 }
 
 /* Fonts */
@@ -57,6 +58,10 @@
   background-color: var(--color-3);
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
 .font-style-1 {
   font-family: 'light', sans-serif;
 }
@@ -83,6 +88,10 @@
 
 .d-flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .justify-center {
@@ -113,6 +122,10 @@ a {
   padding: 1rem;
 }
 
+.p-3 {
+  padding: 3rem;
+}
+
 .py-1 {
   padding: 1rem 0;
 }
@@ -133,6 +146,18 @@ a {
   padding-left: 3rem;
 }
 
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.border-0 {
+  border: none;
+}
+
+.border-right {
+  border-right: 1px solid var(--color-1);
+}
+
 .font-size-lg {
   font-size: 2rem;
 }
@@ -150,7 +175,6 @@ a {
 }
 
 .default-btn {
-  background-color: var(--color-1);
   color: #fff;
   padding: 1rem 2rem;
   border: none;
@@ -173,15 +197,15 @@ a {
   opacity: 0.7;
 }
 
+.list-style-none {
+  list-style-type: none;
+}
+
 html {
   font-size: 10px;
 }
 
 /* navbar styles */
-
-.navbar-links {
-  list-style-type: none;
-}
 
 img[alt="bookshop-logo"],
 img[alt="user-img"] {
@@ -201,6 +225,20 @@ img[alt="user-img"] {
   padding: 0.2rem;
 }
 
+/* Hero Section */
+
+.hero-section {
+  background: url("../assets/images/book-gray.svg") no-repeat, linear-gradient(var(--color-4), var(--color-1));
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.genre-selector {
+  padding: 0.9rem;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 768px) {
@@ -214,6 +252,10 @@ img[alt="user-img"] {
 
   .search-btn {
     display: none;
+  }
+
+  .hero-section {
+    display: flex;
   }
 }
 

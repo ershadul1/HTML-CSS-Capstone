@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="bg-color-3 d-flex justify-around p-1">
-            <ul class="navbar-links d-flex align-center justify-center">
+            <ul class="list-style-none d-flex align-center justify-center">
                 <li>
                     <a href="/index.html" class="image-highlight">
                         <img src="/assets/images/book.svg" alt="bookshop-logo">
@@ -40,12 +40,13 @@
                     </a>
                 </li>
                 <li class="pl-2">
-                    <button type="button" class="d-none stock-btn default-btn font-size-sm font-style-2">REQUEST
+                    <button type="button"
+                        class="d-none stock-btn default-btn font-size-sm font-style-2 bg-color-1">REQUEST
                         FOR STOCK</button>
                 </li>
             </ul>
 
-            <ul class="navbar-links d-flex justify-around align-center user-info">
+            <ul class="list-style-none d-flex justify-around align-center user-info">
                 <li class="d-none visible-in-lg">
                     <a href="#" class="image-highlight">
                         <img src="/assets/images/mail.svg" alt="mail-icon" class="navbar-icon">
@@ -55,7 +56,7 @@
                 </li>
                 <li class="d-none visible-in-lg">
                     <a href="#">
-                        <span class="color-white font-style-3 font-size-md pl-1 gray-highlight">User Name</span>
+                        <span class="color-white font-style-3 font-size-sm pl-1 gray-highlight">User Name</span>
                     </a>
                 </li>
                 <li>
@@ -64,10 +65,27 @@
                     </a>
                 </li>
                 <li class="pl-2">
-                    <a href="search.html" class="search-btn default-btn font-size-sm font-style-2">Search</a>
+                    <a href="search.html" class="search-btn default-btn font-size-sm font-style-2 bg-color-1">Search</a>
                 </li>
             </ul>
         </nav>
+
+        <section class="hero-section d-none flex-column align-center justify-center p-3">
+            <h2 class="hero-title font-style-2 color-white p-1">BOOKSHOP</h2>
+            <h4 class="font-style-1 color-white font-size-md">An online market place for all kinds of books</h4>
+            <form action="#" class="p-3 d-flex align-center">
+                <select name="genre" class="genre-selector border-0 bg-white border-right">
+                    <option value="all">All genre</option>
+                    <option value="non-fiction">Non Fiction</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="academic">Academic</option>
+                </select>
+                <input type="text" placeholder="What do you search for ?" class="p-1 border-0 font-style-1 border-right">
+                <input type="text" placeholder="Search..." class="p-1 border-0 font-style-1">
+                <button href="search.html" type="button"
+                    class="default-btn font-size-sm font-style-2 bg-color-3 ml-1">Search</button>
+            </form>
+        </section>
     </header>
 
     <main>
