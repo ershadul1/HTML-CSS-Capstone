@@ -380,8 +380,13 @@ img[alt="cart-logo-2"] {
 
 /* Footer */
 
-.footer-links-container {
+.footer-links-container,
+.copyright-section {
   max-width: 1024px;
+}
+
+.location-info {
+  place-items: center;
 }
 
 /* Media queries */
@@ -413,6 +418,10 @@ img[alt="cart-logo-2"] {
 
   .book-card-img {
     height: 250px;
+  }
+
+  .location-info {
+    align-items: flex-end;
   }
 }
 
