@@ -340,8 +340,8 @@ img[alt="cart-logo-2"] {
 }
 
 .category-heading-icons {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 1.8rem;
 }
 
 .book-card {
@@ -355,7 +355,6 @@ img[alt="cart-logo-2"] {
 
 .add-to-cart {
   border: 1px solid #ccc;
-
 }
 
 /* Media queries */
