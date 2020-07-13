@@ -5,11 +5,11 @@
 
 > Homepage
 
-![screenshot](assets/screenshot-1.png)
+![screenshot](screenshot-1.png)
 
 > Search page
 
-![screenshot](assets/screenshot-2.png)
+![screenshot](screenshot-2.png)
 
 
 ## Built With 🧰
