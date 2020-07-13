@@ -30,6 +30,8 @@
   box-sizing: border-box;
 }
 
+/* font colors */
+
 .color-1 {
   color: var(--color-1);
 }
@@ -45,6 +47,8 @@
 .color-white {
   color: #fff;
 }
+
+/* background colors */
 
 .bg-color-1 {
   background-color: var(--color-1);
@@ -62,6 +66,8 @@
   background-color: #fff;
 }
 
+/* font styles */
+
 .font-style-1 {
   font-family: 'light', sans-serif;
 }
@@ -73,6 +79,8 @@
 .font-style-3 {
   font-family: 'bold', sans-serif;
 }
+
+/* display properties */
 
 .d-none {
   display: none;
@@ -89,6 +97,8 @@
 .d-flex {
   display: flex;
 }
+
+/* flex properties */
 
 .flex-wrap {
   flex-wrap: wrap;
@@ -133,6 +143,8 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* paddings */
 
 .p-half {
   padding: 0.5rem;
@@ -182,6 +194,12 @@ a {
   padding-bottom: 4rem;
 }
 
+/* margins */
+
+.my-half {
+  margin: 0.5rem 0;
+}
+
 .my-1 {
   margin: 1rem 0;
 }
@@ -206,6 +224,8 @@ a {
   margin: 0 0.5rem;
 }
 
+/* borders */
+
 .border-0 {
   border: none;
 }
@@ -225,6 +245,12 @@ a {
 .border-bottom-2 {
   border-bottom: 1px solid var(--color-1);
 }
+
+.border-bottom-3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* font sizes */
 
 .font-size-lg {
   font-size: 2rem;
@@ -246,6 +272,8 @@ a {
   font-size: 0.5rem;
 }
 
+/* miscellaneous */
+
 .h-200 {
   height: 200px;
 }
@@ -259,6 +287,7 @@ a {
   padding: 1rem 2rem;
   border: none;
   border-radius: 0.2rem;
+  max-width: 200px;
 }
 
 .default-btn:hover {
@@ -378,18 +407,37 @@ img[alt="cart-logo-2"] {
   border: 1px solid #ccc;
 }
 
+.filter-container {
+  min-width: 200px;
+}
+
+.search-images {
+  width: 150px;
+}
+
 /* Footer */
 
 .footer-links-container,
-.copyright-section {
+.copyright-section,
+.filter-search-container {
   max-width: 1024px;
 }
 
 .location-info {
-  place-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Media queries */
+@media screen and (min-width: 400px) {
+  .purchase-details-container {
+    flex-direction: row;
+  }
+
+  .visible-in-sm {
+    display: block;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .visible-in-md {
@@ -406,10 +454,6 @@ img[alt="cart-logo-2"] {
 
   .hero-section {
     display: flex;
-  }
-
-  .purchase-details-container {
-    flex-direction: row;
   }
 
   .book-card {
