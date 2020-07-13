@@ -1,10 +1,16 @@
 # HTML-CSS CAPSTONE 'BOOKSHOP' 🚧
 
-> One paragraph statement about the project.
+> I followed [this](https://www.behance.net/gallery/24796463/ZATTIX) design created by [Mohammed Awad](https://www.behance.net/M_Awad)
+> and created this bookshop project.
 
-![screenshot](assets/app_screenshot.jpg)
+> Homepage
 
-Additional description about the project and its features.
+![screenshot](assets/screenshot-1.jpg)
+
+> Search page
+
+![screenshot](assets/screenshot-2.jpg)
+
 
 ## Built With 🧰
 
@@ -19,46 +25,38 @@ Additional description about the project and its features.
 
 ## Getting Started 🏁
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+If you are viewing this README.md file using a computer, a browser and a connection to the internet, then congratulations! You have all the prerequisites to access our project.
+
 ### Setup
 
-### Install
+1. Open Terminal
+2. Navigate to your desired location to download the contents of this repository.
+3. Copy and paste the following code into the Terminal: 
+        
+        git clone https://github.com/rloterh/NewsWeekClone.git
 
-### Usage
+4. Hit enter
+5. Once the repository has been cloned, open index.html in a browser of your choosing.
+6. Enjoy!
 
-### Run tests
+## Author
 
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 Ershadul Hakim Rayhan
+👤 **Ershadul Hakim Rayhan**
 
 - Github: [@ershadul1](https://github.com/ershadul1)
-- Email:  ershadul.rayhan@gmail.com
 - Twitter: [@ErshadulRayhan](https://twitter.com/ErshadulRayhan)
 - Linkedin: [ErshadulRayhan](https://www.linkedin.com/in/ershadul-hakim-rayhan-a5a17649/)
+- Email:  ershadul.rayhan@gmail.com
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+The best contribution you can make is helping us improve our work by submitting an issue. 
 
-Feel free to check the [issues page](issues/).
+You can also fork this repo and work on it.
 
 ## Show your support
 
@@ -66,9 +64,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- [Microverse](https://www.microverse.org/)
+- [this](https://www.behance.net/gallery/24796463/ZATTIX)
+- VSCode <3
+
 
 ## 📝 License
 
