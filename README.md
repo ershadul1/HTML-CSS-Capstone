@@ -65,7 +65,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/)
-- [this](https://www.behance.net/gallery/24796463/ZATTIX)
+- [Mohammed Awad's Design](https://www.behance.net/gallery/24796463/ZATTIX)
 - VSCode <3
 
 
