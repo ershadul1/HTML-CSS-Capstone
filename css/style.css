@@ -429,7 +429,7 @@ img[alt="cart-logo-2"] {
 }
 
 /* Media queries */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 474px) {
   .purchase-details-container {
     flex-direction: row;
   }
