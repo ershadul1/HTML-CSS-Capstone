@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="bg-color-3 d-flex justify-around p-1">
+            <ul class="list-style-none d-flex align-center justify-center">
+                <li>
+                    <a href="/index.html" class="image-highlight">
+                        <img src="./assets/images/book.svg" alt="bookshop-logo">
+                        <span class="color-white font-style-3 font-size-md pl-1">BOOKSHOP</span>
+                    </a>
+                </li>
+                <li class="pl-2 d-none visible-in-md">
+                    <a href="index.html">
+                        <img src="./assets/images/home-run.svg" alt="home-logo" class="navbar-icon">
+                        <span class="color-1 font-style-1 font-size-sm pl-1 white-highlight">HOME</span>
+                    </a>
+                </li>
+                <li class="pl-2 d-none visible-in-md">
+                    <a href="#">
+                        <img src="./assets/images/bookshelf.svg" alt="collection-logo" class="navbar-icon">
+                        <span class="color-2 font-style-1 font-size-sm pl-1 white-highlight">COLLECTIONS</span>
+                    </a>
+                </li>
+                <li class="pl-2">
+                    <a href="#">
+                        <img src="./assets/images/supermarket.svg" alt="cart-logo" class="navbar-icon">
+                        <span
+                            class="color-2 font-style-1 font-size-sm pl-1 white-highlight d-none visible-in-md">PURCHASE
+                            LIST</span>
+                    </a>
+                </li>
+                <li class="pl-2">
+                    <button type="button"
+                        class="d-none stock-btn default-btn font-size-sm font-style-2 bg-color-1">REQUEST
+                        FOR STOCK</button>
+                </li>
+            </ul>
+
+            <ul class="list-style-none d-flex justify-around align-center user-info">
+                <li class="d-none visible-in-lg">
+                    <a href="#" class="image-highlight">
+                        <img src="./assets/images/mail.svg" alt="mail-icon" class="navbar-icon">
+                        <span
+                            class="d-inline-block bg-color-1 mail-notification font-size-sm font-style-2 color-white">12</span>
+                    </a>
+                </li>
+                <li class="d-none visible-in-lg">
+                    <a href="#">
+                        <span class="color-white font-style-3 font-size-sm pl-1 gray-highlight">User Name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/person.svg" alt="user-img" class="image-highlight pl-1">
+                    </a>
+                </li>
+                <li class="pl-1">
+                    <a href="search.html" class="search-btn default-btn font-size-sm font-style-2 bg-color-1">Search</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="hero-section d-none flex-column align-center justify-center p-3">
+            <h1 class="hero-title font-style-2 color-white p-1">BOOKSHOP</h1>
+            <h4 class="font-style-1 color-white font-size-md">An online market place for all kinds of books</h4>
+            <form action="#" class="hero-form p-1 d-flex align-center">
+                <select name="genre" class="genre-selector border-0 bg-white border-right flex-grow-1 pointer">
+                    <option value="all">All genre</option>
+                    <option value="non-fiction">Non Fiction</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="academic">Academic</option>
+                </select>
+                <input type="text" placeholder="What do you search for ?"
+                    class="p-1 border-0 font-style-1 border-right flex-grow-1 pointer">
+                <input type="text" placeholder="Search..." class="p-1 border-0 font-style-1 flex-grow-1 pointer">
+                <a href="search.html" class="default-btn font-size-sm font-style-2 bg-color-3 ml-1">Search</a>
+            </form>
+        </section>
+    </header>
+
+    <main class="pb-4">
+        <!-- Featured Book -->
+        <div class="bg-white border">
+            <section class="featured-book mx-auto p-1">
+                <h4 class="font-style-2 font-size-md color-2 black-highlight pointer">FEATURED BOOK</h4>
+                <div class="d-flex justify-between py-1">
+                    <img src="assets/images/siddhartha.jpg" alt="siddhartha" class="d-block h-200">
+                    <div class="ml-1 d-flex flex-column justify-between">
+                        <h4 class="font-style-2 font-size-md color-1 pointer black-highlight">Siddhartha: A Novel <span
+                                class="font-style-1 font-size-md color-2 black-highlight">by Hermann Hesse, Hilda Rosner
+                                (Translator)</span>
+                        </h4>
+                        <p class="font-style-1 font-size-s color-3 py-1 d-none visible-in-sm gray-highlight pointer">
+                            Herman Hesse's classic novel
+                            has delighted, inspired, and influenced generations of readers,
+                            writers, and thinkers. In this story of a wealthy Indian Brahmin who casts off a life of
+                            privilege to seek spiritual fulfillment.</p>
+                        <p class="font-size-md font-style-2 color-3 gray-highlight pointer">Rating: 4/5</p>
+                        <div class="d-flex flex-column purchase-details-container">
+                            <a href="#" class="default-btn font-size-md font-style-2 bg-color-1 mr-half my-half">$5.49</a>
+                            <a href="#" class="default-btn font-size-sm font-style-2 bg-color-1 mr-half my-half"><img
+                                    src="./assets/images/supermarket-white.svg" alt="cart-logo-2"><span
+                                    class="pl-1">Purchase
+                                    Details</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Non Fiction Books -->
+        <section class="book-genre-container mx-auto p-1">
+            <h4 class="font-style-2 font-size-md color-2  border-bottom my-1 py-1 black-highlight pointer"><img
+                    src="assets/images/ai.svg" alt="non-fiction" class="category-heading-icons mr-half">Non Fiction
+                Books</h4>
+            <div class="book-cards-container d-flex flex-wrap justify-between">
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/non-fiction-img-1.jpg" alt="non-fiction-img-1"
+                        class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">"Surely You're Joking, Mr.
+                            Feynman!": Adventures of a Curious Character</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Richard P. Feynman</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.6/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$10.89</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/non-fiction-img-2.jpg" alt="non-fiction-img-1"
+                        class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">Educated</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Tara Westover</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.47/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$19.60</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/non-fiction-img-3.jpg" alt="non-fiction-img-1"
+                        class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">Thinking, Fast and Slow</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Daniel Kahneman</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.5/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$8.99</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/non-fiction-img-4.jpg" alt="non-fiction-img-1"
+                        class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">Bad Blood: Secrets and Lies in
+                            a Silicon Valley Startup</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by John Carreyrou</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.44/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$15.33</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Fiction Books-->
+        <section class="book-genre-container mx-auto p-1">
+            <h4 class="font-style-2 font-size-md color-2  border-bottom my-1 py-1 black-highlight pointer"><img
+                    src="assets/images/fiction.svg" alt="fiction" class="category-heading-icons mr-half">Fiction
+                Books</h4>
+            <div class="book-cards-container d-flex flex-wrap justify-between">
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/fiction-img-1.jpg" alt="fiction-img-1" class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Great Gatsby</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by F. Scott Fitzgerald</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 3.92/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$10.78</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/fiction-img-2.jpg" alt="fiction-img-2" class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Kite Runner</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Khaled Hosseini, Berliani M.
+                                Nugrahani (Translator)</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.3/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$15.99</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/fiction-img-3.jpg" alt="fiction-img-3" class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">1984</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by George Orwell, Peter Hobley
+                                Davison (Foreword)</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.18/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$19.99</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/fiction-img-4.jpg" alt="fiction-img-4" class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Alchemist</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Paulo Coelho, Alan R. Clarke
+                                (Translator)</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 3.87/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$16.93</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Academic Books -->
+        <section class="book-genre-container mx-auto p-1">
+            <h4 class="font-style-2 font-size-md color-2  border-bottom my-1 py-1 black-highlight pointer"><img
+                    src="assets/images/opportunity.svg" alt="academic" class="category-heading-icons mr-half">Academic
+                Books</h4>
+            <div class="book-cards-container d-flex flex-wrap justify-between">
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/academic-img-1.jpg" alt="academic-img-1" class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Communist Manifesto</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Karl Marx, Friedrich Engels
+                            </p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 3.57/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$6.89</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/academic-img-2.jpg" alt="academic-img-2" class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Republic</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Plato</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 3.94/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$14.25</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/academic-img-3.jpg" alt="academic-img-3" class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Elements of Style</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by William Strunk Jr., E.B.
+                                White</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.19/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$11.99</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card bg-white my-1">
+                    <img src="./assets/images/academic-img-4.jpg" alt="academic-img-4" class="book-card-img d-block">
+                    <div class="p-half pointer d-flex flex-column justify-between h-200">
+                        <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">Discipline and Punish: The
+                            Birth of the Prison</p>
+                        <div>
+                            <p class="font-size-sm font-style-2 color-3 gray-highlight">by Michel Foucault, A.M.
+                                Sheridan-Smith (Translator)</p>
+                            <p class="font-size-s font-style-2 color-3  py-1 gray-highlight">Rating: 4.22/5</p>
+                            <p class="py-1 d-flex justify-between align-center">
+                                <span class="add-to-cart font-size-lg px-half  gray-highlight">+</span>
+                                <span class="font-size-md color-1 font-style-2 gray-highlight">$22</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border">
+        <div class="d-flex flex-wrap justify-around footer-links-container mx-auto">
+            <div class="p-1">
+                <div class="d-flex justify-center align-center">
+                    <img src="./assets/images/book-gray.svg" alt="bookshop-logo">
+                    <span class="color-2 font-style-3 font-size-md pl-1">BOOKSHOP</span>
+                </div>
+                <p class="font-style-2 color-2 font-size-sm py-half">
+                    Bookshop is a market place for books. Here you can find<br>
+                    a huge collection of books. You can browse through our<br>
+                    search box. Our search algorithm will help you find your<br>
+                    preferred books. </p>
+            </div>
+
+            <div class="flex-grow-1 p-1">
+                <p class="font-style-2 color-1 font-size-s  border-bottom-2">Categories</p>
+                <ul class="list-style-none py-half">
+                    <li class="font-style-2 color-2 font-size-sm underline pointer py-half">Non Fiction</li>
+                    <li class="font-style-2 color-2 font-size-sm underline pointer py-half">Fiction</li>
+                    <li class="font-style-2 color-2 font-size-sm underline pointer py-half">Academic</li>
+                </ul>
+            </div>
+
+            <div class="flex-grow-1 p-1">
+                <p class="font-style-2 color-1 font-size-s  border-bottom-2">Navigation</p>
+                <ul class="list-style-none py-half">
+                    <li class="font-style-2 color-2 font-size-sm underline pointer py-half">Home</li>
+                    <li class="font-style-2 color-2 font-size-sm underline pointer py-half">Sign In</li>
+                    <li class="font-style-2 color-2 font-size-sm underline pointer py-half">Sign Up</li>
+                    <li class="font-style-2 color-2 font-size-sm underline pointer py-half">Terms & Conditions</li>
+                    <li class="font-style-2 color-2 font-size-sm underline pointer py-half">FAQ</li>
+                    <li class="font-style-2 color-2 font-size-sm underline pointer py-half">Help</li>
+                </ul>
+            </div>
+            <div class="flex-grow-1 d-flex flex-column p-1 location-info">
+                <ul class="list-style-none">
+                    <li class="font-style-3 color-1 font-size-s py-half">COUNTRY<span
+                            class="font-style-2 color-3 font-size-sm border px-half ml-half pointer">United States</span></li>
+                   <li class="font-style-3 color-1 font-size-s  py-half">LANGUAGE<span
+                            class="font-style-2 color-3 font-size-sm border px-half ml-half pointer">English</span></li>
+                    <li class="font-style-3 color-1 font-size-s  py-half">CURRENCY<span
+                            class="font-style-2 color-3 font-size-sm border px-half ml-half pointer">US Dollar</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border">
+            <div class="copyright-section p-1 mx-auto d-flex justify-between align-center">
+                <p class="font-size-sm font-style-1 color-2">Copyright&copy; 2020 bookshop.com. All rights reserved. Created by Ershadul Hakim Rayhan. Design idea by Mohammed Awad.</p>
+                <ul class="list-style-none d-flex">
+                    <li><img src="./assets/images/twitter.svg" alt="twitter-logo" class="d-block category-heading-icons pointer ml-half"></li>
+                    <li><img src="./assets/images/google.svg" alt="google-logo" class="d-block category-heading-icons pointer ml-half"></li>
+                    <li><img src="./assets/images/facebook.svg" alt="facebook-logo" class="d-block category-heading-icons pointer ml-half"></li>
+                    <li><img src="./assets/images/linkedin.svg" alt="linkedin-logo" class="d-block category-heading-icons pointer ml-half"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,481 @@
+/* Variables */
+:root {
+  --color-1: #d35266;
+  --color-2: #888;
+  --color-3: #383838;
+  --color-4: #d67e89;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'light';
+  src: url("../assets/fonts/HelveticaNeue-Light.ttf");
+}
+
+@font-face {
+  font-family: 'medium';
+  src: url("../assets/fonts/HelveticaNeue-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url("../assets/fonts/HelveticaNeu-Bold.ttf");
+}
+
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font colors */
+
+.color-1 {
+  color: var(--color-1);
+}
+
+.color-2 {
+  color: var(--color-2);
+}
+
+.color-3 {
+  color: var(--color-3);
+}
+
+.color-white {
+  color: #fff;
+}
+
+/* background colors */
+
+.bg-color-1 {
+  background-color: var(--color-1);
+}
+
+.bg-color-2 {
+  background-color: var(--color-2);
+}
+
+.bg-color-3 {
+  background-color: var(--color-3);
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+/* font styles */
+
+.font-style-1 {
+  font-family: 'light', sans-serif;
+}
+
+.font-style-2 {
+  font-family: 'medium', sans-serif;
+}
+
+.font-style-3 {
+  font-family: 'bold', sans-serif;
+}
+
+/* display properties */
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* flex properties */
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* paddings */
+
+.p-half {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.px-half {
+  padding: 0 0.5rem;
+}
+
+.py-half {
+  padding: 0.5rem 0;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.pb-4 {
+  padding-bottom: 4rem;
+}
+
+/* margins */
+
+.my-half {
+  margin: 0.5rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.ml-half {
+  margin-left: 0.5rem;
+}
+
+.mr-half {
+  margin-right: 0.5rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.mx-half {
+  margin: 0 0.5rem;
+}
+
+/* borders */
+
+.border-0 {
+  border: none;
+}
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.border-right {
+  border-right: 1px solid var(--color-1);
+}
+
+.border-bottom {
+  border-bottom: 2px solid #ccc;
+}
+
+.border-bottom-2 {
+  border-bottom: 1px solid var(--color-1);
+}
+
+.border-bottom-3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* font sizes */
+
+.font-size-lg {
+  font-size: 2rem;
+}
+
+.font-size-md {
+  font-size: 1.6rem;
+}
+
+.font-size-s {
+  font-size: 1.5rem;
+}
+
+.font-size-sm {
+  font-size: 1rem;
+}
+
+.font-size-xs {
+  font-size: 0.5rem;
+}
+
+/* miscellaneous */
+
+.h-200 {
+  height: 200px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.default-btn {
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.2rem;
+  max-width: 200px;
+}
+
+.default-btn:hover {
+  background-color: var(--color-2);
+  cursor: pointer;
+}
+
+.white-highlight:hover {
+  color: #fff;
+}
+
+.gray-highlight:hover {
+  color: var(--color-2);
+}
+
+.black-highlight:hover {
+  color: var(--color-3);
+}
+
+.image-highlight:hover {
+  opacity: 0.7;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+html {
+  font-size: 10px;
+  background-color: #f5f5f5;
+}
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+/* navbar styles */
+
+img[alt="bookshop-logo"],
+img[alt="user-img"] {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.navbar-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.mail-notification {
+  position: relative;
+  left: 0;
+  top: -0.8rem;
+  padding: 0.2rem;
+}
+
+/* Hero Section */
+
+.hero-section {
+  background: url("../assets/images/book-bg.svg") no-repeat, linear-gradient(var(--color-4), var(--color-1));
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.hero-form {
+  width: 700px;
+}
+
+.genre-selector {
+  padding: 0.9rem;
+}
+
+/* Featured book */
+
+.featured-book {
+  max-width: 700px;
+}
+
+img[alt="cart-logo-2"] {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Book genre container */
+
+.book-genre-container {
+  max-width: 768px;
+}
+
+.category-heading-icons {
+  width: 2rem;
+  height: 1.8rem;
+}
+
+.book-card {
+  width: 48%;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+.book-card-img {
+  width: 100%;
+}
+
+.add-to-cart {
+  border: 1px solid #ccc;
+}
+
+.filter-container {
+  min-width: 220px;
+}
+
+.search-images {
+  width: 150px;
+  height: 245px;
+}
+
+/* Footer */
+
+.footer-links-container,
+.copyright-section,
+.filter-search-container {
+  max-width: 1024px;
+}
+
+.location-info {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media queries */
+@media screen and (min-width: 474px) {
+  .purchase-details-container {
+    flex-direction: row;
+  }
+
+  .visible-in-sm {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .visible-in-md {
+    display: block;
+  }
+
+  .stock-btn {
+    display: block;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .hero-section {
+    display: flex;
+  }
+
+  .book-card {
+    width: 24%;
+  }
+
+  .book-card-img {
+    height: 250px;
+  }
+
+  .location-info {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .user-info {
+    display: flex;
+  }
+
+  .visible-in-lg {
+    display: block;
+  }
+}
