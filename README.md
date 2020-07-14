@@ -3,11 +3,14 @@
 > I followed [this](https://www.behance.net/gallery/24796463/ZATTIX) design created by [Mohammed Awad](https://www.behance.net/M_Awad)
 > and created this bookshop project.
 
-> Homepage
+> This is an online market place for books. It has two pages homepage and search page. The homepage shows 
+> different categories of books. The search page has a filter side bar.
+
+- Homepage
 
 ![screenshot](screenshot-1.png)
 
-> Search page
+- Search page
 
 ![screenshot](screenshot-2.png)
 
