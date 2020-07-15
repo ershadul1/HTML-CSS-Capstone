@@ -40,7 +40,7 @@ If you are viewing this README.md file using a computer, a browser and a connect
 2. Navigate to your desired location to download the contents of this repository.
 3. Copy and paste the following code into the Terminal: 
         
-        git clone https://github.com/rloterh/NewsWeekClone.git
+        git clone git@github.com:ershadul1/HTML-CSS-Capstone.git
 
 4. Hit enter
 5. Once the repository has been cloned, open index.html in a browser of your choosing.
