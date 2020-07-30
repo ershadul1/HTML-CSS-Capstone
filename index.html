@@ -75,14 +75,14 @@
             <h4 class="font-style-1 color-white font-size-md">An online market place for all kinds of books</h4>
             <form action="#" class="hero-form p-1 d-flex align-center">
                 <select name="genre" class="genre-selector border-0 bg-white border-right flex-grow-1 pointer">
-                    <option value="all">All genre</option>
-                    <option value="non-fiction">Non Fiction</option>
-                    <option value="fiction">Fiction</option>
-                    <option value="academic">Academic</option>
+                    <option value="all" class="genre-selector">All genre</option>
+                    <option value="non-fiction" class="genre-selector">Non Fiction</option>
+                    <option value="fiction" class="genre-selector">Fiction</option>
+                    <option value="academic" class="genre-selector">Academic</option>
                 </select>
                 <input type="text" placeholder="What do you search for ?"
-                    class="p-1 border-0 font-style-1 border-right flex-grow-1 pointer">
-                <input type="text" placeholder="Search..." class="p-1 border-0 font-style-1 flex-grow-1 pointer">
+                    class="p-1 border-0 font-style-1 font-size-sm border-right flex-grow-1 pointer">
+                <input type="text" placeholder="Search..." class="p-1 border-0 font-style-1 font-size-sm flex-grow-1 pointer">
                 <a href="search.html" class="default-btn font-size-sm font-style-2 bg-color-3 ml-1">Search</a>
             </form>
         </section>
@@ -92,8 +92,8 @@
         <!-- Featured Book -->
         <div class="bg-white border">
             <section class="featured-book mx-auto p-1">
-                <h4 class="font-style-2 font-size-md color-2 black-highlight pointer">FEATURED BOOK</h4>
-                <div class="d-flex justify-between py-1">
+                <h1 class="font-style-2 font-size-md color-2 black-highlight pointer">FEATURED BOOK</h1>
+                <article class="d-flex justify-between py-1">
                     <img src="assets/images/siddhartha.jpg" alt="siddhartha" class="d-block h-200">
                     <div class="ml-1 d-flex flex-column justify-between">
                         <h4 class="font-style-2 font-size-md color-1 pointer black-highlight">Siddhartha: A Novel <span
@@ -114,7 +114,7 @@
                                     Details</span></a>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
         </div>
 
@@ -123,8 +123,10 @@
             <h4 class="font-style-2 font-size-md color-2  border-bottom my-1 py-1 black-highlight pointer"><img
                     src="assets/images/ai.svg" alt="non-fiction" class="category-heading-icons mr-half">Non Fiction
                 Books</h4>
-            <div class="book-cards-container d-flex flex-wrap justify-between">
-                <div class="book-card bg-white my-1">
+            <section class="book-cards-container d-flex flex-wrap justify-between">
+                <h2 class="d-none">This is hidden</h2>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/non-fiction-img-1.jpg" alt="non-fiction-img-1"
                         class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
@@ -139,8 +141,9 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="book-card bg-white my-1">
+                </article>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/non-fiction-img-2.jpg" alt="non-fiction-img-1"
                         class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
@@ -154,8 +157,9 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="book-card bg-white my-1">
+                </article>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/non-fiction-img-3.jpg" alt="non-fiction-img-1"
                         class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
@@ -169,8 +173,9 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="book-card bg-white my-1">
+                </article>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/non-fiction-img-4.jpg" alt="non-fiction-img-1"
                         class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
@@ -185,18 +190,19 @@
                             </p>
                         </div>
                     </div>
-                </div>
-
-            </div>
+                </article>
+            </section>
         </section>
 
         <!-- Fiction Books-->
         <section class="book-genre-container mx-auto p-1">
-            <h4 class="font-style-2 font-size-md color-2  border-bottom my-1 py-1 black-highlight pointer"><img
+            <h1 class="font-style-2 font-size-md color-2  border-bottom my-1 py-1 black-highlight pointer"><img
                     src="assets/images/fiction.svg" alt="fiction" class="category-heading-icons mr-half">Fiction
-                Books</h4>
-            <div class="book-cards-container d-flex flex-wrap justify-between">
-                <div class="book-card bg-white my-1">
+                Books</h1>
+            <section class="book-cards-container d-flex flex-wrap justify-between">
+                <h2 class="d-none">This is hidden</h2>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/fiction-img-1.jpg" alt="fiction-img-1" class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
                         <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Great Gatsby</p>
@@ -209,8 +215,9 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="book-card bg-white my-1">
+                </article>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/fiction-img-2.jpg" alt="fiction-img-2" class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
                         <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Kite Runner</p>
@@ -224,8 +231,9 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="book-card bg-white my-1">
+                </article>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/fiction-img-3.jpg" alt="fiction-img-3" class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
                         <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">1984</p>
@@ -239,8 +247,9 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="book-card bg-white my-1">
+                </article>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/fiction-img-4.jpg" alt="fiction-img-4" class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
                         <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Alchemist</p>
@@ -254,18 +263,19 @@
                             </p>
                         </div>
                     </div>
-                </div>
-
-            </div>
+                </article>
+            </section>
         </section>
 
         <!-- Academic Books -->
         <section class="book-genre-container mx-auto p-1">
-            <h4 class="font-style-2 font-size-md color-2  border-bottom my-1 py-1 black-highlight pointer"><img
+            <h1 class="font-style-2 font-size-md color-2  border-bottom my-1 py-1 black-highlight pointer"><img
                     src="assets/images/opportunity.svg" alt="academic" class="category-heading-icons mr-half">Academic
-                Books</h4>
-            <div class="book-cards-container d-flex flex-wrap justify-between">
-                <div class="book-card bg-white my-1">
+                Books</h1>
+            <section class="book-cards-container d-flex flex-wrap justify-between">
+                <h2 class="d-none">This is hidden</h2>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/academic-img-1.jpg" alt="academic-img-1" class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
                         <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Communist Manifesto</p>
@@ -279,8 +289,9 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="book-card bg-white my-1">
+                </article>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/academic-img-2.jpg" alt="academic-img-2" class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
                         <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Republic</p>
@@ -293,8 +304,9 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="book-card bg-white my-1">
+                </article>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/academic-img-3.jpg" alt="academic-img-3" class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
                         <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">The Elements of Style</p>
@@ -308,8 +320,9 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="book-card bg-white my-1">
+                </article>
+                <article class="book-card bg-white my-1">
+                    <h2 class="d-none">This is hidden</h2>
                     <img src="./assets/images/academic-img-4.jpg" alt="academic-img-4" class="book-card-img d-block">
                     <div class="p-half pointer d-flex flex-column justify-between h-200">
                         <p class="font-style-1 font-size-md color-3 py-1 gray-highlight">Discipline and Punish: The
@@ -324,14 +337,14 @@
                             </p>
                         </div>
                     </div>
-                </div>
-
-            </div>
+                </article>
+            </section>
         </section>
     </main>
 
     <footer class="bg-white border">
-        <div class="d-flex flex-wrap justify-around footer-links-container mx-auto">
+        <section class="d-flex flex-wrap justify-around footer-links-container mx-auto">
+            <h2 class="d-none">This is hidden</h2>
             <div class="p-1">
                 <div class="d-flex justify-center align-center">
                     <img src="./assets/images/book-gray.svg" alt="bookshop-logo">
@@ -374,8 +387,9 @@
                             class="font-style-2 color-3 font-size-sm border px-half ml-half pointer">US Dollar</span></li>
                 </ul>
             </div>
-        </div>
-        <div class="border">
+        </section>
+        <section class="border">
+            <h2 class="d-none">This is hidden</h2>
             <div class="copyright-section p-1 mx-auto d-flex justify-between align-center">
                 <p class="font-size-sm font-style-1 color-2">Copyright&copy; 2020 bookshop.com. All rights reserved. Created by Ershadul Hakim Rayhan. Design idea by Mohammed Awad.</p>
                 <ul class="list-style-none d-flex">
@@ -385,7 +399,7 @@
                     <li><img src="./assets/images/linkedin.svg" alt="linkedin-logo" class="d-block category-heading-icons pointer ml-half"></li>
                 </ul>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 

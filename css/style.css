@@ -265,7 +265,7 @@ a {
 }
 
 .font-size-sm {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .font-size-xs {
@@ -342,8 +342,8 @@ img[alt="user-img"] {
 }
 
 .navbar-icon {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .mail-notification {
@@ -368,7 +368,8 @@ img[alt="user-img"] {
 }
 
 .genre-selector {
-  padding: 0.9rem;
+  font-size: 12px;
+  padding: 0.8rem;
 }
 
 /* Featured book */
