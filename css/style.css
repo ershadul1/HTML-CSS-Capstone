@@ -368,7 +368,8 @@ img[alt="user-img"] {
 }
 
 .genre-selector {
-  padding: 0.9rem;
+  font-size: 12px;
+  padding: 0.8rem;
 }
 
 /* Featured book */
