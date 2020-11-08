@@ -1,10 +1,12 @@
 # HTML-CSS CAPSTONE 'BOOKSHOP' 🚧
 
-> I followed [this](https://www.behance.net/gallery/24796463/ZATTIX) design created by [Mohammed Awad](https://www.behance.net/M_Awad)
-> and created this bookshop project.
+## Project Description
 
 > This is an online market place for books. It has two pages homepage and search page. The homepage shows 
-> different categories of books. The search page has a filter side bar.
+> different categories of books. The search page has a filter side bar. 
+
+> I followed [this](https://www.behance.net/gallery/24796463/ZATTIX) design created by [Mohammed Awad](https://www.behance.net/M_Awad)
+> and created this bookshop project.
 
 - Homepage
 
